@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <title> Film Card </title>
+        
+    </head>
+    <body>
+        <header>Film Card</header>
+        <div class="films">
+        <div class="Film_Card">
+            <p class="filmname">Film Title</p>
+            <p class="Subtext">Release Year, Director</p>
+
+            <div class="video">
+                <video id= "myVideo" controls>
+                <source src=".\img\Star_Wars.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <section class="slideshow-container">
+                <div class="mySlides Frame"><img src=".\img\StarWars_1.jpg" alt="image1"></div>
+                <div class="mySlides Frame"><img src=".\img\StarWars_2.jpg" alt="image2"></div>
+                <div class="mySlides Frame"><img src=".\img\StarWars_3.jpg" alt="image3"></div>
+     
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                     
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                 <span class="dot" onclick="currentSlide(1)"></span>
+                 <span class="dot" onclick="currentSlide(2)"></span>
+                 <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </section>
+                         
+            <section class="icon1Layout">
+              <img class="icon" src=".\icon\favorite.png">
+            </section>
+
+            <section class="icon2Layout">
+               <img class="icon" src=".\icon\share.png">
+            </section>
+
+            <section class="icon3Layout">
+                <img class="icon" src=".\icon\search.png">
+            </section>
+
+            <section class="icon4Layout">
+                <img class="icon" src=".\icon\shopping.png">
+            </section>
+
+            <p class="Reviews">Bewertung von Netflix</p>
+
+            <section class="starLayout">
+                <img class="star" src=".\icon\star_5.png">
+                <img class="star" src=".\icon\star_5.png">
+                <img class="star" src=".\icon\star_5.png">
+                <img class="star" src=".\icon\star_5.png">
+                <img class="star" src=".\icon\star_5.png">
+                <p class="zahl">4.8</p>
+            </section>
+
+            <section class="ButtonLayout">
+                <button id="playButton" class="Button Button_text">Trailer anschauen</button>
+            </section>    
+        </div>
+        
+        <script src="./js/SlideShow.js"></script> 
+        </div>
+    </body>
+</html>
